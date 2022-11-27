@@ -1,0 +1,14 @@
+{
+  "name": "profile-card-component-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./SCSS/main.scss ./CSS/style.css -w"
+  },
+  "author": "Milan Pjevic",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

@@ -1,0 +1,135 @@
+$--dark-cyan: #19a2ae;
+$--very-dark-desaturated-blue: #2d3248;
+$--fark-grayish-blue: #6a6f81;
+$--dark-gray: #969696;
+$--white: #fff;
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: $--dark-cyan;
+  color: $--very-dark-desaturated-blue;
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+
+.background-img {
+  height: 100%;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pattern {
+  position: absolute;
+
+  &__top {
+    top: -68%;
+    left: -20%;
+  }
+  &__bottom {
+    bottom: -88%;
+    right: -16%;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+
+  position: absolute;
+
+  &__background {
+    position: relative;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 6.9rem;
+    margin-bottom: 0.9rem;
+  }
+
+  &__age {
+    font-weight: 400;
+    color: $--dark-gray;
+    margin-left: 0.5rem;
+  }
+
+  &__city {
+    color: $--dark-gray;
+    font-size: 1.4rem;
+    margin-bottom: 2.3rem;
+  }
+
+  &__line {
+    width: 100%;
+    border-top: 0.5px solid $--dark-gray;
+  }
+
+  &__data-box {
+    width: 100%;
+
+    &--main {
+      padding: 2.5rem 2.5rem;
+
+      display: flex;
+    }
+
+    &--sub {
+      text-align: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__number {
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    font-size: 1.8rem;
+  }
+
+  &__asset {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  &__avatar {
+    border: 5px solid $--white;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 8.8rem;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .pattern {
+    position: absolute;
+
+    &__top {
+      top: -90%;
+      left: -200%;
+    }
+    &__bottom {
+      bottom: -82%;
+      right: -202%;
+    }
+  }
+
+  .card {
+    width: 86%;
+  }
+}
